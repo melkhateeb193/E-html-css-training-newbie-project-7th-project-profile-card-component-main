@@ -13,7 +13,6 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif;
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +20,12 @@ body {
     font-size: 18px;
     line-height: 1.5rem;
     background-color:var(--Dark-cyan);
-    overflow: hidden;
-    display: flex;
     flex-direction: column;
-    overflow: hidden;
     background-image: url(../images/bg-pattern-bottom.svg) , url(../images/bg-pattern-top.svg);
     background-repeat: no-repeat;
     background-position: left 45vw top 44vh,right 48vw bottom 40vh ;
 }
+
 .textContainer{
     width: 350px;
     height: 380px;
@@ -78,7 +75,7 @@ hr {
     justify-content: space-around;
     margin-top: 20px;
 align-items: center;}
-.data-followers  h3 {
+.data-followers  h2 {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
@@ -92,4 +89,18 @@ align-items: center;}
 .attribution {
     margin-top: 20px;
     text-align: center;
+}
+
+@media (min-width:700px) {
+    body{
+        width: 100%;
+        height: fit-content;
+        margin-top:  40px;
+    }
+    .textContainer {
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
 }
